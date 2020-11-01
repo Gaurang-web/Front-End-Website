@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+<title>Check some Math skills</title>
+<style type="text/css">
+    
+ol{font-family: 'Boogaloo', cursive;color:#fa0800;font-size:200%;letter-spacing:0px;word-spacing:20px;border: 4px groove blue;}
+
+p{margin:0px;padding:20px;}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1546833998-877b37c2e5c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-blend-mode: darken;
+    margin:0px;padding:0px;}
+
+
+button{font-family: 'Boogaloo', cursive; font-size: 30px;}
+
+
+</style>
+</head>
+<body >
+    <marquee direction = "right">
+<h1 style="text-align:center;font-family: 'Boogaloo', cursive;font-size:300%;word-spacing:20px;">Welcome to Maths Challenge!!</marquee></h1>
+
+<ol style="padding-left:10px;">
+<div>
+<li><p><b>1. What is 1+1?</b></p></li>
+<p><input type="text" id="a2"></p><p><button type="button" id="a1">Check</button></p><br><br><br>
+</div>
+
+<li><p><b>2. What is 10-3?</b></p></li>
+<p><input type="text" id="b2"></p><p><button type="button" id="b1">Check</button></p>
+<br><br><br>
+
+<li><p><b>3. What is 2x4?</b></p></li>
+<p><input type="text" id="c2"></p><p><button type="button" id="c1">Check</button></p><br><br><br>
+
+<li><p><b>4. What is 10/2?</b></p></li>
+<p><input type="text" id="d2"></p><p><button type="button" id="d1">Check</button></p><br><br><br>
+</ol>
+
+
+<input type="submit" value="Click to know your score" style="margin-left:600px;" id="sub" style="font-family: 'Bangers', cursive;">
+
+
+<script type="text/javascript">
+
+
+var a=new Array();
+
+document.getElementById("a1").onclick=function(){a[0]=document.getElementById("a2").value;if(a[0].length==0){alert("answer can't be empty");return;}if(a[0]==2){alert("Correct Answer!!");}else {alert("Sorry..Correct Answer is 2");}}
+document.getElementById("b1").onclick=function(){a[1]=document.getElementById("b2").value;if(a[1].length==0){alert("answer can't be empty");return;}if(a[1]==7){alert("Correct Answer!!");}else {alert("Sorry..Correct Answer is 7");}}
+document.getElementById("c1").onclick=function(){a[2]=document.getElementById("c2").value;if(a[2].length==0){alert("answer can't be empty");return;}if(a[2]==8){alert("Correct Answer!!");}else {alert("Sorry..Correct Answer is 8");}}
+document.getElementById("d1").onclick=function(){a[3]=document.getElementById("d2").value;if(a[3].length==0){alert("answer can't be empty");return;}if(a[3]==5){alert("Correct Answer!!");}else {alert("Sorry..Correct Answer is 5  ");}}
+
+
+document.getElementById("sub").onclick=function(){
+    var s=0;
+    var t1=document.getElementById("a2").value;
+    if(t1==2){s=s+1;}
+    var t2=document.getElementById("b2").value;
+   if(t2==7){s=s+1;}
+    var t3=document.getElementById("c2").value;
+    if(t3==8){s=s+1;}
+    var t4=document.getElementById("d2").value;
+   if(t4==5){s=s+1;}
+    
+    
+    
+    alert("Your score is "+s);}
+</script>
+
+</body>
+</html>
